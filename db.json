@@ -1,14 +1,6 @@
 {
   "phones": [
     {
-      "id": "1",
-      "name": "iPhone 13",
-      "review": "Excellent camera and performance.",
-      "image": "src/Components/images/iphone 13.webp",
-      "likes": 8,
-      "dislikes": 2
-    },
-    {
       "id": "2",
       "name": "Samsung Galaxy S21",
       "review": "Great screen and battery life, very fast.",
