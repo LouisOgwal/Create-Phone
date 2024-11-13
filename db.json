@@ -1,0 +1,103 @@
+{
+  "phones": [
+    {
+      "id": "1",
+      "name": "iPhone 13",
+      "review": "Excellent camera and performance.",
+      "image": "src/Components/images/iphone 13.webp",
+      "likes": 8,
+      "dislikes": 2
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S21",
+      "review": "Great screen and battery life, very fast.",
+      "image": "src/Components/images/Galaxy s21.jpeg",
+      "likes": 10
+    },
+    {
+      "id": "3",
+      "name": "Google Pixel 6",
+      "review": "Amazing AI features and a stunning camera.",
+      "image": "src/Components/images/Google pixel 6.jpeg",
+      "likes": 8
+    },
+    {
+      "id": "4",
+      "name": "OnePlus 9 Pro",
+      "review": "Fast and fluid experience with a great display.",
+      "image": "src/Components/images/One plus 9pro.jpeg",
+      "likes": 6
+    },
+    {
+      "id": "5",
+      "name": "Sony Xperia 5 III",
+      "review": "Superb camera and compact design.",
+      "image": "src/Components/images/Sony Xperia 5 III.jpeg",
+      "likes": 4,
+      "dislikes": 2
+    },
+    {
+      "id": "6",
+      "name": "Xiaomi Mi 11",
+      "review": "Affordable flagship with strong performance.",
+      "image": "src/Components/images/Xiaomi Mi 11.jpeg",
+      "likes": 11,
+      "dislikes": 6
+    },
+    {
+      "id": "7",
+      "name": "iPhone SE (2020)",
+      "review": "Compact, budget-friendly, and powerful enough.",
+      "image": "src/Components/images/iPhone SE (2020).jpeg",
+      "likes": 3
+    },
+    {
+      "id": "8",
+      "name": "Huawei P40 Pro",
+      "review": "Incredible camera but lacks Google services.",
+      "image": "src/Components/images/Huawei P40 Pro.jpeg",
+      "likes": 7,
+      "dislikes": 2
+    },
+    {
+      "id": "9",
+      "name": "Samsung Galaxy Z Fold 3",
+      "review": "Innovative foldable design, top-of-the-line specs.",
+      "image": "src/Components/images/Samsung Galaxy Z Fold 3.jpeg",
+      "likes": 13
+    },
+    {
+      "id": "10",
+      "name": "Asus ROG Phone 5",
+      "review": "Best choice for gamers with great battery life.",
+      "image": "src/Components/images/Asus ROG Phone 5.jpeg",
+      "likes": 12,
+      "dislikes": 2
+    },
+    {
+      "id": "11",
+      "name": "Motorola Edge Plus",
+      "review": "Edge-to-edge display and great performance.",
+      "image": "src/Components/images/Motorola Edge Plus.jpeg",
+      "likes": 4,
+      "dislikes": 2
+    },
+    {
+      "id": "c4ef",
+      "name": "iphone 13",
+      "review": "great performance",
+      "image": "src/Components/images/iphone 13.webp",
+      "dislikes": 7,
+      "likes": null
+    },
+    {
+      "id": "2d34",
+      "name": "iphone 13",
+      "review": "good performance",
+      "image": "",
+      "likes": null,
+      "dislikes": 1
+    }
+  ]
+}
