@@ -1,9 +1,12 @@
 body {
   font-family: Arial, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -157,4 +160,19 @@ button.dislike-btn {
 
 button.dislike-btn:hover {
   background-color: #c0392b;
+}
+
+button.edit-btn {
+  background-color: #7d788f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+button.edit-btn:hover {
+  background-color: #2980b9;
 }

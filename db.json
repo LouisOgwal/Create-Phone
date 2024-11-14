@@ -5,7 +5,8 @@
       "name": "Samsung Galaxy S21",
       "review": "Great screen and battery life, very fast.",
       "image": "src/Components/images/Galaxy s21.jpeg",
-      "likes": 10
+      "likes": 11,
+      "dislikes": 2
     },
     {
       "id": "3",
@@ -80,16 +81,8 @@
       "name": "iphone 13",
       "review": "great performance",
       "image": "src/Components/images/iphone 13.webp",
-      "dislikes": 7,
-      "likes": null
-    },
-    {
-      "id": "2d34",
-      "name": "iphone 13",
-      "review": "good performance",
-      "image": "",
-      "likes": null,
-      "dislikes": 1
+      "dislikes": 8,
+      "likes": 1
     }
   ]
 }

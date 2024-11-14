@@ -5,9 +5,11 @@ import PhoneList from './Components/PhoneList.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PhoneDetails from './Components/PhoneDetails.jsx';
 import NavBar from './Components/NavBar.jsx';
+import EditPhoneForm from './Components/EditPhoneForm.jsx';
 
 function App() {
   const [phones, setPhones] = useState([]);
+  const [editPhone, setEditPhone] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:3002/phones")
@@ -68,17 +70,47 @@ function App() {
       .catch(error => console.error("Error updating dislikes:", error));
   };
 
+  const handleEdit = (updatedPhone) => {
+    fetch(`http://localhost:3002/phones/${updatedPhone.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedPhone),
+    })
+      .then(res => res.json())
+      .then(data => {
+        setPhones(phones.map(phone => phone.id === data.id ? data : phone));
+        setEditPhone(null);
+      })
+      .catch(error => console.error("Error updating phone:", error));
+  };
+
   return (
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={
-          <div>
-            <h3></h3>
-            <AddPhone handleSubmit={handleSubmit} />
-            <PhoneList phones={phones} handleDelete={handleDelete} handleLike={handleLike} handleDislike={handleDislike} />
-          </div>
-        } />
+        <Route
+          path="/"
+          element={
+            <div>
+              <AddPhone handleSubmit={handleSubmit} />
+              {editPhone ? (
+                <EditPhoneForm
+                  phone={editPhone}
+                  handleEdit={handleEdit}
+                  cancelEdit={() => setEditPhone(null)}
+                />
+              ) : (
+                <PhoneList
+                  phones={phones}
+                  handleDelete={handleDelete}
+                  handleLike={handleLike}
+                  handleDislike={handleDislike}
+                  setEditPhone={setEditPhone}
+                />
+              )}
+            </div>
+          }
+        />
         <Route path="/phones/:id" element={<PhoneDetails />} />
       </Routes>
     </Router>
