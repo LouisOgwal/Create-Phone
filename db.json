@@ -5,7 +5,7 @@
       "name": "Google Pixel 6",
       "review": "Amazing AI features and a stunning camera.",
       "image": "src/Components/images/Google pixel 6.jpeg",
-      "likes": 8
+      "likes": 9
     },
     {
       "id": "4",
@@ -73,8 +73,8 @@
       "name": "iphone 13",
       "review": "great performance",
       "image": "src/Components/images/iphone 13.webp",
-      "dislikes": 8,
-      "likes": 1
+      "dislikes": 11,
+      "likes": 3
     }
   ]
 }
